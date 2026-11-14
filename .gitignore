@@ -1,0 +1,12 @@
+# Entorno virtual de Python
+.venv/
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+
+# Archivos generados por macOS
+.DS_Store
+
+# Configuración local del editor
+.vscode/
