@@ -1,0 +1,1148 @@
+[
+  {
+    "Entity":"Afghanistan",
+    "GDP per capita":1983.8126,
+    "Life expectancy":66.035,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Albania",
+    "GDP per capita":20501.646,
+    "Life expectancy":79.602,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Algeria",
+    "GDP per capita":15159.324,
+    "Life expectancy":76.261,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Andorra",
+    "GDP per capita":64631.297,
+    "Life expectancy":84.041,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Angola",
+    "GDP per capita":8597.539,
+    "Life expectancy":64.617,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Antigua and Barbuda",
+    "GDP per capita":28712.396,
+    "Life expectancy":77.598,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Argentina",
+    "GDP per capita":27230.396,
+    "Life expectancy":77.395,
+    "World region according to OWID":"South America"
+  },
+  {
+    "Entity":"Armenia",
+    "GDP per capita":19402.752,
+    "Life expectancy":75.683,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Aruba",
+    "GDP per capita":42783.25,
+    "Life expectancy":76.353,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Australia",
+    "GDP per capita":60684.96,
+    "Life expectancy":83.923,
+    "World region according to OWID":"Oceania"
+  },
+  {
+    "Entity":"Austria",
+    "GDP per capita":64536.207,
+    "Life expectancy":81.956,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Azerbaijan",
+    "GDP per capita":21310.738,
+    "Life expectancy":74.429,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Bahamas",
+    "GDP per capita":35221.27,
+    "Life expectancy":74.552,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Bahrain",
+    "GDP per capita":57819.906,
+    "Life expectancy":81.284,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Bangladesh",
+    "GDP per capita":8242.398,
+    "Life expectancy":74.672,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Barbados",
+    "GDP per capita":20865.016,
+    "Life expectancy":76.178,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Belarus",
+    "GDP per capita":27782.438,
+    "Life expectancy":74.434,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Belgium",
+    "GDP per capita":63042.01,
+    "Life expectancy":82.115,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Belize",
+    "GDP per capita":12371.009,
+    "Life expectancy":73.566,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Benin",
+    "GDP per capita":3721.2126,
+    "Life expectancy":60.774,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Bermuda",
+    "GDP per capita":102268.92,
+    "Life expectancy":82.309,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Bhutan",
+    "GDP per capita":14610.296,
+    "Life expectancy":72.975,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Bolivia",
+    "GDP per capita":11616.157,
+    "Life expectancy":68.581,
+    "World region according to OWID":"South America"
+  },
+  {
+    "Entity":"Bosnia and Herzegovina",
+    "GDP per capita":19804.918,
+    "Life expectancy":77.85,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Botswana",
+    "GDP per capita":18932.48,
+    "Life expectancy":69.163,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Brazil",
+    "GDP per capita":19079.812,
+    "Life expectancy":75.848,
+    "World region according to OWID":"South America"
+  },
+  {
+    "Entity":"Brunei",
+    "GDP per capita":76616.7,
+    "Life expectancy":75.327,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Bulgaria",
+    "GDP per capita":33073.68,
+    "Life expectancy":75.636,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Burkina Faso",
+    "GDP per capita":2486.2068,
+    "Life expectancy":61.092,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Burundi",
+    "GDP per capita":1033.0094,
+    "Life expectancy":63.651,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Cambodia",
+    "GDP per capita":6695.292,
+    "Life expectancy":70.668,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Cameroon",
+    "GDP per capita":4875.251,
+    "Life expectancy":63.7,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Canada",
+    "GDP per capita":58088.38,
+    "Life expectancy":82.63,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Cape Verde",
+    "GDP per capita":9228.461,
+    "Life expectancy":76.059,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Central African Republic",
+    "GDP per capita":1132.6764,
+    "Life expectancy":57.408,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Chad",
+    "GDP per capita":2433.5332,
+    "Life expectancy":55.069,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Chile",
+    "GDP per capita":29600.418,
+    "Life expectancy":81.167,
+    "World region according to OWID":"South America"
+  },
+  {
+    "Entity":"China",
+    "GDP per capita":22687.252,
+    "Life expectancy":77.953,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Colombia",
+    "GDP per capita":18406.625,
+    "Life expectancy":77.725,
+    "World region according to OWID":"South America"
+  },
+  {
+    "Entity":"Comoros",
+    "GDP per capita":3508.1587,
+    "Life expectancy":66.777,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Congo",
+    "GDP per capita":6172.2876,
+    "Life expectancy":65.772,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Costa Rica",
+    "GDP per capita":26378.541,
+    "Life expectancy":80.799,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Cote d'Ivoire",
+    "GDP per capita":6520.899,
+    "Life expectancy":61.944,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Croatia",
+    "GDP per capita":41320.258,
+    "Life expectancy":78.58,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Curacao",
+    "GDP per capita":27617.92,
+    "Life expectancy":76.8,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Cyprus",
+    "GDP per capita":51674.902,
+    "Life expectancy":81.648,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Czechia",
+    "GDP per capita":47558.41,
+    "Life expectancy":79.834,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Democratic Republic of Congo",
+    "GDP per capita":1559.338,
+    "Life expectancy":61.895,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Denmark",
+    "GDP per capita":68993.91,
+    "Life expectancy":81.933,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Dominica",
+    "GDP per capita":18278.225,
+    "Life expectancy":71.132,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Dominican Republic",
+    "GDP per capita":23282.49,
+    "Life expectancy":73.72,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"East Timor",
+    "GDP per capita":4331.078,
+    "Life expectancy":67.689,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Ecuador",
+    "GDP per capita":14321.165,
+    "Life expectancy":77.392,
+    "World region according to OWID":"South America"
+  },
+  {
+    "Entity":"Egypt",
+    "GDP per capita":16691.387,
+    "Life expectancy":71.633,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"El Salvador",
+    "GDP per capita":11404.334,
+    "Life expectancy":72.099,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Equatorial Guinea",
+    "GDP per capita":15302.151,
+    "Life expectancy":63.707,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Estonia",
+    "GDP per capita":41284.773,
+    "Life expectancy":79.153,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Eswatini",
+    "GDP per capita":10181.504,
+    "Life expectancy":64.123,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Ethiopia",
+    "GDP per capita":2757.9592,
+    "Life expectancy":67.315,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Fiji",
+    "GDP per capita":13194.805,
+    "Life expectancy":67.316,
+    "World region according to OWID":"Oceania"
+  },
+  {
+    "Entity":"Finland",
+    "GDP per capita":56051.77,
+    "Life expectancy":81.91,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"France",
+    "GDP per capita":54296.723,
+    "Life expectancy":83.325,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Gabon",
+    "GDP per capita":18701.422,
+    "Life expectancy":68.337,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Gambia",
+    "GDP per capita":2963.5986,
+    "Life expectancy":65.86,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Georgia",
+    "GDP per capita":22590.53,
+    "Life expectancy":74.496,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Germany",
+    "GDP per capita":63140.195,
+    "Life expectancy":81.378,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Ghana",
+    "GDP per capita":6808.5376,
+    "Life expectancy":65.498,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Greece",
+    "GDP per capita":36700.51,
+    "Life expectancy":81.857,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Greenland",
+    "GDP per capita":71037.54,
+    "Life expectancy":70.055,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Grenada",
+    "GDP per capita":17093.156,
+    "Life expectancy":75.205,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Guatemala",
+    "GDP per capita":12380.371,
+    "Life expectancy":72.602,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Guinea",
+    "GDP per capita":3904.824,
+    "Life expectancy":60.74,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Guinea-Bissau",
+    "GDP per capita":2660.8145,
+    "Life expectancy":64.085,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Guyana",
+    "GDP per capita":49312.36,
+    "Life expectancy":70.18,
+    "World region according to OWID":"South America"
+  },
+  {
+    "Entity":"Haiti",
+    "GDP per capita":2939.1238,
+    "Life expectancy":64.936,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Honduras",
+    "GDP per capita":6467.88,
+    "Life expectancy":72.884,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Hong Kong",
+    "GDP per capita":64387.664,
+    "Life expectancy":85.511,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Hungary",
+    "GDP per capita":40333.254,
+    "Life expectancy":77.024,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Iceland",
+    "GDP per capita":69268.125,
+    "Life expectancy":82.691,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"India",
+    "GDP per capita":8870.55,
+    "Life expectancy":72.003,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Indonesia",
+    "GDP per capita":13889.949,
+    "Life expectancy":71.146,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Iran",
+    "GDP per capita":17044.816,
+    "Life expectancy":77.654,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Iraq",
+    "GDP per capita":13202.323,
+    "Life expectancy":72.324,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Ireland",
+    "GDP per capita":117659.73,
+    "Life expectancy":82.412,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Israel",
+    "GDP per capita":47671.246,
+    "Life expectancy":82.408,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Italy",
+    "GDP per capita":52842.63,
+    "Life expectancy":83.716,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Jamaica",
+    "GDP per capita":11398.8125,
+    "Life expectancy":71.479,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Japan",
+    "GDP per capita":47387.22,
+    "Life expectancy":84.712,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Jordan",
+    "GDP per capita":10308.782,
+    "Life expectancy":77.814,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Kazakhstan",
+    "GDP per capita":34703.234,
+    "Life expectancy":74.402,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Kenya",
+    "GDP per capita":5691.825,
+    "Life expectancy":63.646,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Kiribati",
+    "GDP per capita":3175.0247,
+    "Life expectancy":66.473,
+    "World region according to OWID":"Oceania"
+  },
+  {
+    "Entity":"Kuwait",
+    "GDP per capita":47790.19,
+    "Life expectancy":80.405,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Kyrgyzstan",
+    "GDP per capita":6575.7754,
+    "Life expectancy":71.677,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Laos",
+    "GDP per capita":8372.156,
+    "Life expectancy":68.964,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Latvia",
+    "GDP per capita":37277.723,
+    "Life expectancy":76.19,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Lebanon",
+    "GDP per capita":11330.269,
+    "Life expectancy":77.817,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Lesotho",
+    "GDP per capita":2592.457,
+    "Life expectancy":57.375,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Liberia",
+    "GDP per capita":1616.9237,
+    "Life expectancy":62.163,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Libya",
+    "GDP per capita":12476.598,
+    "Life expectancy":69.339,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Lithuania",
+    "GDP per capita":46333.902,
+    "Life expectancy":76.025,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Luxembourg",
+    "GDP per capita":130048.92,
+    "Life expectancy":82.229,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Macao",
+    "GDP per capita":104815.2,
+    "Life expectancy":83.075,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Madagascar",
+    "GDP per capita":1629.6055,
+    "Life expectancy":63.632,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Malawi",
+    "GDP per capita":1649.2987,
+    "Life expectancy":67.353,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Malaysia",
+    "GDP per capita":32857.668,
+    "Life expectancy":76.657,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Maldives",
+    "GDP per capita":22333.047,
+    "Life expectancy":81.041,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Mali",
+    "GDP per capita":2861.4805,
+    "Life expectancy":60.439,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Malta",
+    "GDP per capita":60459.766,
+    "Life expectancy":83.299,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Marshall Islands",
+    "GDP per capita":6774.7827,
+    "Life expectancy":66.945,
+    "World region according to OWID":"Oceania"
+  },
+  {
+    "Entity":"Mauritania",
+    "GDP per capita":6276.475,
+    "Life expectancy":68.484,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Mauritius",
+    "GDP per capita":26471.035,
+    "Life expectancy":74.926,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Mexico",
+    "GDP per capita":21864.924,
+    "Life expectancy":75.069,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Micronesia (country)",
+    "GDP per capita":3841.2712,
+    "Life expectancy":67.198,
+    "World region according to OWID":"Oceania"
+  },
+  {
+    "Entity":"Moldova",
+    "GDP per capita":15980.566,
+    "Life expectancy":71.198,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Mongolia",
+    "GDP per capita":16222.864,
+    "Life expectancy":71.734,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Montenegro",
+    "GDP per capita":27243.404,
+    "Life expectancy":77.087,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Morocco",
+    "GDP per capita":8915.352,
+    "Life expectancy":75.313,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Mozambique",
+    "GDP per capita":1512.6672,
+    "Life expectancy":63.611,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Myanmar",
+    "GDP per capita":5364.138,
+    "Life expectancy":66.889,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Namibia",
+    "GDP per capita":10126.236,
+    "Life expectancy":67.385,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Nauru",
+    "GDP per capita":11858.519,
+    "Life expectancy":62.109,
+    "World region according to OWID":"Oceania"
+  },
+  {
+    "Entity":"Nepal",
+    "GDP per capita":4861.2305,
+    "Life expectancy":70.354,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Netherlands",
+    "GDP per capita":70198.95,
+    "Life expectancy":82.158,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"New Zealand",
+    "GDP per capita":49592.586,
+    "Life expectancy":82.088,
+    "World region according to OWID":"Oceania"
+  },
+  {
+    "Entity":"Nicaragua",
+    "GDP per capita":7496.531,
+    "Life expectancy":74.947,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Niger",
+    "GDP per capita":1712.9703,
+    "Life expectancy":61.183,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Nigeria",
+    "GDP per capita":7843.004,
+    "Life expectancy":54.462,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"North Macedonia",
+    "GDP per capita":23455.223,
+    "Life expectancy":77.395,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Norway",
+    "GDP per capita":94364.96,
+    "Life expectancy":83.308,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Oman",
+    "GDP per capita":37793.617,
+    "Life expectancy":80.031,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Pakistan",
+    "GDP per capita":5418.7695,
+    "Life expectancy":67.649,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Palau",
+    "GDP per capita":16487.154,
+    "Life expectancy":69.269,
+    "World region according to OWID":"Oceania"
+  },
+  {
+    "Entity":"Palestine",
+    "GDP per capita":5562.4243,
+    "Life expectancy":65.17,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Panama",
+    "GDP per capita":35872.973,
+    "Life expectancy":79.594,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Papua New Guinea",
+    "GDP per capita":4206.3784,
+    "Life expectancy":66.134,
+    "World region according to OWID":"Oceania"
+  },
+  {
+    "Entity":"Paraguay",
+    "GDP per capita":15831.585,
+    "Life expectancy":73.844,
+    "World region according to OWID":"South America"
+  },
+  {
+    "Entity":"Peru",
+    "GDP per capita":15342.274,
+    "Life expectancy":77.74,
+    "World region according to OWID":"South America"
+  },
+  {
+    "Entity":"Philippines",
+    "GDP per capita":9898.533,
+    "Life expectancy":69.833,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Poland",
+    "GDP per capita":43672.766,
+    "Life expectancy":78.633,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Portugal",
+    "GDP per capita":41768.258,
+    "Life expectancy":82.36,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Puerto Rico",
+    "GDP per capita":42837.87,
+    "Life expectancy":81.69,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Qatar",
+    "GDP per capita":116159.14,
+    "Life expectancy":82.368,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Romania",
+    "GDP per capita":40116.688,
+    "Life expectancy":75.938,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Russia",
+    "GDP per capita":39881.45,
+    "Life expectancy":73.154,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Rwanda",
+    "GDP per capita":3168.0308,
+    "Life expectancy":67.785,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Saint Kitts and Nevis",
+    "GDP per capita":30616.578,
+    "Life expectancy":72.145,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Saint Lucia",
+    "GDP per capita":23636.027,
+    "Life expectancy":72.697,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Saint Vincent and the Grenadines",
+    "GDP per capita":17858.244,
+    "Life expectancy":71.23,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Samoa",
+    "GDP per capita":7384.6914,
+    "Life expectancy":71.698,
+    "World region according to OWID":"Oceania"
+  },
+  {
+    "Entity":"San Marino",
+    "GDP per capita":70951.79,
+    "Life expectancy":85.706,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Sao Tome and Principe",
+    "GDP per capita":5541.302,
+    "Life expectancy":69.718,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Saudi Arabia",
+    "GDP per capita":64481.844,
+    "Life expectancy":78.732,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Senegal",
+    "GDP per capita":4304.7617,
+    "Life expectancy":68.683,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Serbia",
+    "GDP per capita":25735.133,
+    "Life expectancy":76.769,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Seychelles",
+    "GDP per capita":28713.668,
+    "Life expectancy":72.862,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Sierra Leone",
+    "GDP per capita":3034.946,
+    "Life expectancy":61.786,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Singapore",
+    "GDP per capita":130296.84,
+    "Life expectancy":83.736,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Slovakia",
+    "GDP per capita":39501.95,
+    "Life expectancy":78.341,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Slovenia",
+    "GDP per capita":47986.418,
+    "Life expectancy":81.603,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Solomon Islands",
+    "GDP per capita":2339.8748,
+    "Life expectancy":70.528,
+    "World region according to OWID":"Oceania"
+  },
+  {
+    "Entity":"Somalia",
+    "GDP per capita":1401.6473,
+    "Life expectancy":58.816,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"South Africa",
+    "GDP per capita":13695.376,
+    "Life expectancy":66.139,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"South Korea",
+    "GDP per capita":54029.344,
+    "Life expectancy":84.329,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Spain",
+    "GDP per capita":47322.594,
+    "Life expectancy":83.67,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Sri Lanka",
+    "GDP per capita":13065.07,
+    "Life expectancy":77.483,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Sudan",
+    "GDP per capita":2181.079,
+    "Life expectancy":66.331,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Suriname",
+    "GDP per capita":19020.867,
+    "Life expectancy":73.631,
+    "World region according to OWID":"South America"
+  },
+  {
+    "Entity":"Sweden",
+    "GDP per capita":62122.51,
+    "Life expectancy":83.262,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Switzerland",
+    "GDP per capita":85383.36,
+    "Life expectancy":83.954,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"Tajikistan",
+    "GDP per capita":4472.324,
+    "Life expectancy":71.79,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Tanzania",
+    "GDP per capita":3620.7935,
+    "Life expectancy":66.995,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Thailand",
+    "GDP per capita":21245.271,
+    "Life expectancy":76.412,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Togo",
+    "GDP per capita":3215.823,
+    "Life expectancy":62.74,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Tonga",
+    "GDP per capita":7031.3203,
+    "Life expectancy":72.895,
+    "World region according to OWID":"Oceania"
+  },
+  {
+    "Entity":"Trinidad and Tobago",
+    "GDP per capita":31196.604,
+    "Life expectancy":73.49,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Tunisia",
+    "GDP per capita":12650.962,
+    "Life expectancy":76.508,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Turkey",
+    "GDP per capita":35069.17,
+    "Life expectancy":77.156,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Turkmenistan",
+    "GDP per capita":17685.86,
+    "Life expectancy":70.073,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Tuvalu",
+    "GDP per capita":5315.163,
+    "Life expectancy":67.105,
+    "World region according to OWID":"Oceania"
+  },
+  {
+    "Entity":"Uganda",
+    "GDP per capita":2791.0557,
+    "Life expectancy":68.252,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Ukraine",
+    "GDP per capita":15916.958,
+    "Life expectancy":73.422,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"United Arab Emirates",
+    "GDP per capita":70239.836,
+    "Life expectancy":82.909,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"United Kingdom",
+    "GDP per capita":53423.42,
+    "Life expectancy":81.302,
+    "World region according to OWID":"Europe"
+  },
+  {
+    "Entity":"United States",
+    "GDP per capita":74351.67,
+    "Life expectancy":79.304,
+    "World region according to OWID":"North America"
+  },
+  {
+    "Entity":"Uruguay",
+    "GDP per capita":31100.969,
+    "Life expectancy":78.138,
+    "World region according to OWID":"South America"
+  },
+  {
+    "Entity":"Uzbekistan",
+    "GDP per capita":10514.096,
+    "Life expectancy":72.388,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Vanuatu",
+    "GDP per capita":3782.8264,
+    "Life expectancy":71.477,
+    "World region according to OWID":"Oceania"
+  },
+  {
+    "Entity":"Vietnam",
+    "GDP per capita":13534.8,
+    "Life expectancy":74.588,
+    "World region according to OWID":"Asia"
+  },
+  {
+    "Entity":"Zambia",
+    "GDP per capita":3673.4841,
+    "Life expectancy":66.349,
+    "World region according to OWID":"Africa"
+  },
+  {
+    "Entity":"Zimbabwe",
+    "GDP per capita":5218.0454,
+    "Life expectancy":62.775,
+    "World region according to OWID":"Africa"
+  }
+]
