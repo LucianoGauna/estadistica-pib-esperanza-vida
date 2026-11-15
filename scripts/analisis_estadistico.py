@@ -202,3 +202,116 @@ r_cuadrado = 1 - (suma_errores / suma_total)
 print("\n=== CALIDAD DEL AJUSTE - 2023 ===")
 print(f"R²: {r_cuadrado:.4f}")
 print(f"Porcentaje de variabilidad explicada: {r_cuadrado * 100:.2f}%")
+
+
+
+# ========================================
+# ANÁLISIS HISTÓRICO: 2004-2023
+# ========================================
+
+resultados_historicos = []
+
+# Agrupar las observaciones por año
+for anio, datos_anio in df.groupby("Year"):
+
+    pib = datos_anio["GDP per capita"]
+    vida = datos_anio["Life expectancy"]
+
+    # Correlación utilizando el PIB original
+    correlacion_pib = pib.corr(vida)
+
+    # Correlación utilizando el logaritmo del PIB
+    correlacion_log = np.log(pib).corr(vida)
+
+    # Guardar los resultados de ese año
+    resultados_historicos.append({
+        "Year": anio,
+        "Correlacion PIB": correlacion_pib,
+        "Correlacion log PIB": correlacion_log
+    })
+
+# Convertir los resultados en un DataFrame
+df_correlaciones = pd.DataFrame(resultados_historicos)
+
+print("\n=== EVOLUCIÓN DE LA CORRELACIÓN: 2004-2023 ===")
+print(df_correlaciones.to_string(index=False))
+
+
+# Calcular la evolución anual de la esperanza de vida
+evolucion_vida = df.groupby("Year")["Life expectancy"].agg(
+    Media="mean",
+    Mediana="median",
+    Minimo="min",
+    Maximo="max"
+)
+
+print("\n=== EVOLUCIÓN DE ESPERANZA DE VIDA: 2004-2023 ===")
+print(evolucion_vida.round(2).to_string())
+
+
+# Identificar observaciones con esperanza de vida
+# excepcionalmente baja durante el período histórico
+
+casos_extremos = df[
+    df["Life expectancy"] < 40
+].sort_values("Life expectancy")
+
+print("\n=== ESPERANZAS DE VIDA INFERIORES A 40 AÑOS ===")
+
+print(
+    casos_extremos[
+        ["Entity", "Year", "Life expectancy", "GDP per capita"]
+    ].to_string(index=False)
+)
+
+print(f"\nTotal de observaciones: {len(casos_extremos)}")
+
+
+# ========================================
+# EVOLUCIÓN DEL PIB PER CÁPITA: 2004-2023
+# ========================================
+
+evolucion_pib = df.groupby("Year")["GDP per capita"].agg(
+    Media="mean",
+    Mediana="median",
+    Minimo="min",
+    Maximo="max"
+)
+
+print("\n=== EVOLUCIÓN DEL PIB PER CÁPITA: 2004-2023 ===")
+print(evolucion_pib.round(2).to_string())
+
+
+# ========================================
+# EXPORTACIÓN DEL ANÁLISIS HISTÓRICO
+# ========================================
+
+# Unir los resultados usando el año como referencia
+df_historico_resultados = (
+    df_correlaciones
+    .merge(
+        evolucion_vida.reset_index(),
+        on="Year"
+    )
+    .merge(
+        evolucion_pib.reset_index(),
+        on="Year",
+        suffixes=("_vida", "_pib")
+    )
+)
+
+print("\n=== RESULTADOS HISTÓRICOS UNIFICADOS ===")
+print(df_historico_resultados.head())
+
+# Exportar los resultados para la presentación web
+RUTA_JSON_HISTORICO = (
+    RUTA_PROYECTO / "datos" / "evolucion_historica.json"
+)
+
+df_historico_resultados.to_json(
+    RUTA_JSON_HISTORICO,
+    orient="records",
+    indent=2
+)
+
+print("\nArchivo generado: evolucion_historica.json")

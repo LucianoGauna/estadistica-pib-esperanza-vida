@@ -1,42 +1,62 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>¿El dinero compra años de vida?</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.plot.ly/plotly-4.3.0.min.js"></script>
-  <script src="app.js" defer></script>
-</head>
-<body>
-  <main class="container">
-    <header>
-      <p class="eyebrow">Investigación estadística · 2023</p>
-      <h1>¿El dinero compra años de vida?</h1>
-      <p>
-        Exploramos la relación entre el PIB per cápita y la esperanza de vida en 191 países y territorios.
-      </p>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¿El dinero compra años de vida?</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.plot.ly/plotly-4.3.0.min.js"></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <p class="eyebrow">Investigación estadística · 2023</p>
+        <h1>¿El dinero compra años de vida?</h1>
+        <p>
+          Exploramos la relación entre el PIB per cápita y la esperanza de vida
+          en 191 países y territorios.
+        </p>
+      </header>
 
-    <section class="analysis">
-      <h2>Riqueza económica y esperanza de vida</h2>
+      <section class="analysis">
+        <h2>Riqueza económica y esperanza de vida</h2>
 
-      <p>
-        Compará cómo cambia la visualización al utilizar una escala lineal o logarítmica para el PIB per cápita.
-      </p>
+        <p>
+          Compará cómo cambia la visualización al utilizar una escala lineal o
+          logarítmica para el PIB per cápita.
+        </p>
 
-      <div class="controls">
-        <label for="escala">Escala del PIB:</label>
-        <select id="escala">
-          <option value="linear">Lineal (r = 0,7460)</option>
-          <option value="log">Logarítmica (r = 0,8593)</option>
-        </select>
-      </div>
+        <div class="controls">
+          <label for="escala">Escala del PIB:</label>
+          <select id="escala">
+            <option value="linear">Lineal (r = 0,7460)</option>
+            <option value="log">Logarítmica (r = 0,8593)</option>
+          </select>
+        </div>
 
-      <div id="grafico-dispersion"></div>
-      <p id="mensaje-error" role="alert"></p>
-    </section>
-  </main>
-</body>
+        <div id="grafico-dispersion"></div>
+        <p id="mensaje-error" role="alert"></p>
+      </section>
+
+      <section class="analysis">
+        <p class="eyebrow">Análisis histórico · 2004–2023</p>
+        <h2>¿Cómo evolucionó la relación durante veinte años?</h2>
+
+        <p>
+          La correlación entre PIB per cápita y esperanza de vida fue positiva
+          durante todo el período. Compará la evolución de la correlación
+          original y la logarítmica.
+        </p>
+
+        <div id="grafico-correlaciones"></div>
+
+        <p class="chart-insight">
+          En 2004, la correlación logarítmica era de 0,8114. En 2023 alcanzó
+          0,8593. La asociación se fortaleció entre ambos extremos, aunque
+          presentó fluctuaciones.
+        </p>
+      </section>
+    </main>
+  </body>
 </html>

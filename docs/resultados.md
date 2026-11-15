@@ -250,15 +250,26 @@ Para completar el estudio es necesario analizar la evolución histórica entre 2
 
 ## 5. Análisis histórico: 2004–2023
 
-*Pendiente de realizar.*
+### Revisión de valores extremos de esperanza de vida
 
-En esta sección se incorporarán los resultados sobre:
+Durante el análisis histórico se identificaron observaciones excepcionalmente bajas de esperanza de vida:
 
-- Evolución de la esperanza de vida.
-- Evolución del PIB per cápita.
-- Cambios en la correlación entre ambas variables.
-- Comparaciones entre los años inicial y final.
-- Posibles cambios en la relación entre riqueza y esperanza de vida a lo largo del período.
+| País | Año | Esperanza de vida |
+|---|---:|---:|
+| República Centroafricana | 2009 | 14,67 años |
+| República Centroafricana | 2022 | 18,82 años |
+| República Centroafricana | 2019 | 31,53 años |
+| Somalia | 2011 | 32,45 años |
+
+Estos valores fueron contrastados con las series estadísticas del Banco Mundial, disponibles a través de [FRED — República Centroafricana](https://fred.stlouisfed.org/series/SPDYNLE00INCAF) y [FRED — Somalia](https://fred.stlouisfed.org/series/SPDYNLE00INSOM).
+
+[Our World in Data](https://ourworldindata.org/grapher/life-expectancy) advierte que determinadas estimaciones de mortalidad durante crisis humanitarias pueden producir descensos abruptos de esperanza de vida concentrados en años específicos.
+
+En particular, los valores de República Centroafricana de 2009 y 2022 requieren una interpretación cuidadosa debido a la metodología utilizada para estimar la mortalidad durante esos períodos.
+
+Por este motivo, se decidió **conservar las observaciones en el dataset principal**, evitando excluir valores únicamente por resultar extremos.
+
+Estos casos se consideran relevantes para comprender las limitaciones de los indicadores y evaluar posteriormente cuánto influyen en los resultados estadísticos.
 
 ---
 

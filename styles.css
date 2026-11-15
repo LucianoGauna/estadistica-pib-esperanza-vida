@@ -75,3 +75,26 @@ select {
 #mensaje-error {
   color: #ff9a9a;
 }
+
+
+/* Separación entre secciones de la presentación */
+
+.analysis + .analysis {
+  margin-top: 32px;
+}
+
+/* Gráficos históricos */
+
+#grafico-correlaciones {
+  width: 100%;
+  min-height: 450px;
+}
+
+/* Texto que destaca una conclusión */
+
+.chart-insight {
+  border-left: 3px solid #6dd3c7;
+  padding-left: 16px;
+  margin-top: 24px;
+  color: #d4e3eb;
+}

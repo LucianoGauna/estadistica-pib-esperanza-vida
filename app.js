@@ -112,3 +112,82 @@ async function iniciar() {
 }
 
 iniciar();
+
+async function mostrarCorrelacionesHistoricas() {
+  try {
+    const respuesta = await fetch("datos/evolucion_historica.json");
+
+    if (!respuesta.ok) {
+      throw new Error("No se pudieron cargar los datos históricos");
+    }
+
+    const historico = await respuesta.json();
+
+    const anios = historico.map((dato) => dato.Year);
+
+    const datos = [
+      {
+        x: anios,
+        y: historico.map((dato) => dato["Correlacion PIB"]),
+        type: "scatter",
+        mode: "lines+markers",
+        name: "PIB original",
+        line: {
+          color: "#6dd3c7",
+          width: 3,
+        },
+        hovertemplate: "Año: %{x}<br>r = %{y:.4f}<extra></extra>",
+      },
+      {
+        x: anios,
+        y: historico.map((dato) => dato["Correlacion log PIB"]),
+        type: "scatter",
+        mode: "lines+markers",
+        name: "Logaritmo del PIB",
+        line: {
+          color: "#f0b86e",
+          width: 3,
+        },
+        hovertemplate: "Año: %{x}<br>r = %{y:.4f}<extra></extra>",
+      },
+    ];
+
+    const layout = {
+      paper_bgcolor: "#121b2e",
+      plot_bgcolor: "#121b2e",
+      font: { color: "#e8edf5" },
+      margin: { t: 35, r: 25, b: 70, l: 65 },
+      xaxis: {
+        title: { text: "Año" },
+        tickmode: "array",
+        tickvals: [
+          2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2023,
+        ],
+        range: [2003.5, 2023.5],
+        gridcolor: "#263247",
+      },
+      yaxis: {
+        title: { text: "Correlación de Pearson (r)" },
+        range: [0.6, 0.9],
+        gridcolor: "#263247",
+        zeroline: false,
+      },
+      legend: {
+        orientation: "h",
+        y: -0.25,
+      },
+      hovermode: "x unified",
+    };
+
+    Plotly.newPlot("grafico-correlaciones", datos, layout, {
+      responsive: true,
+      displaylogo: false,
+    });
+  } catch (error) {
+    console.error(error);
+    document.getElementById("grafico-correlaciones").textContent =
+      "No se pudieron cargar los datos históricos.";
+  }
+}
+
+mostrarCorrelacionesHistoricas();

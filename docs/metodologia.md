@@ -119,3 +119,7 @@ Asimismo, el conjunto incluye tanto países soberanos como territorios y otras e
 En los análisis donde se calcule el promedio de los países y territorios, cada entidad tendrá el mismo peso, independientemente de su población. Por lo tanto, esos promedios no deben interpretarse como la esperanza de vida de una persona promedio del mundo.
 
 El dataset procesado se utilizará posteriormente para calcular medidas estadísticas, analizar la relación entre las variables y estudiar su evolución durante el período seleccionado.
+
+Durante la revisión de los datos históricos se identificaron valores excepcionalmente bajos de esperanza de vida en algunas entidades. Estas observaciones fueron contrastadas con las series del [Banco Mundial](https://data.worldbank.org/indicator/SP.DYN.LE00.IN) y con las advertencias metodológicas de [Our World in Data](https://ourworldindata.org/grapher/life-expectancy).
+
+Se decidió conservar los valores extremos en el conjunto principal, dado que su presencia en la fuente no constituye por sí misma un error. No obstante, se tendrán en cuenta sus particularidades al interpretar los resultados y se podrá realizar un análisis de sensibilidad para evaluar su influencia en las estadísticas históricas.
