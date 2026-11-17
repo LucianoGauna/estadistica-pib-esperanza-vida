@@ -10,14 +10,198 @@
   </head>
   <body>
     <main class="container">
-      <header>
-        <p class="eyebrow">Investigación estadística · 2023</p>
+      <header class="hero">
+        <p class="eyebrow">Trabajo final de Estadística · 2004–2023</p>
+
         <h1>¿El dinero compra años de vida?</h1>
-        <p>
-          Exploramos la relación entre el PIB per cápita y la esperanza de vida
-          en 191 países y territorios.
+
+        <p class="hero-description">
+          Una investigación sobre la relación entre el desarrollo económico y la
+          esperanza de vida. ¿Los países con mayores ingresos por habitante
+          viven necesariamente más años?
         </p>
+
+        <div class="hero-stats">
+          <div>
+            <strong>191</strong>
+            <span>Países y territorios</span>
+          </div>
+
+          <div>
+            <strong>20</strong>
+            <span>Años analizados</span>
+          </div>
+
+          <div>
+            <strong>3.820</strong>
+            <span>Observaciones</span>
+          </div>
+        </div>
       </header>
+
+      <section class="intro-section">
+        <p class="eyebrow">01 · Introducción</p>
+
+        <h2>¿Existe una relación entre riqueza y longevidad?</h2>
+
+        <p>
+          La esperanza de vida es uno de los indicadores más utilizados para
+          estudiar las condiciones de vida de una población. Por su parte, el
+          PIB per cápita permite aproximar el nivel de producción económica por
+          habitante de un país.
+        </p>
+
+        <p>
+          En esta investigación buscamos determinar si existe una asociación
+          entre ambas variables y cómo evolucionó esa relación durante las
+          últimas dos décadas del período estudiado.
+        </p>
+
+        <div class="research-question">
+          <span>Hipótesis de investigación</span>
+          <p>
+            Los países con mayor PIB per cápita tienden a presentar una
+            esperanza de vida más elevada, aunque el nivel económico no explica
+            por completo las diferencias entre países.
+          </p>
+        </div>
+      </section>
+
+      <section class="methodology-section">
+        <p class="eyebrow">02 · Datos y metodología</p>
+
+        <h2>¿De dónde salen nuestros datos?</h2>
+
+        <p>
+          Utilizamos información de Our World in Data, seleccionando
+          observaciones correspondientes al período 2004–2023.
+        </p>
+
+        <p>
+          El conjunto original contenía 19.400 registros. Luego de filtrar el
+          período, eliminar observaciones incompletas y conservar únicamente
+          entidades con veinte años de información, obtuvimos un dataset de
+          3.820 observaciones.
+        </p>
+
+        <div class="methodology-grid">
+          <article class="methodology-card">
+            <span>01 · Fuente</span>
+            <h3>Our World in Data</h3>
+            <p>
+              Información histórica sobre PIB per cápita y esperanza de vida.
+            </p>
+          </article>
+
+          <article class="methodology-card">
+            <span>02 · Preparación</span>
+            <h3>Python y Pandas</h3>
+            <p>
+              Filtrado de años, tratamiento de valores faltantes y validación
+              del dataset.
+            </p>
+          </article>
+
+          <article class="methodology-card">
+            <span>03 · Análisis</span>
+            <h3>Estadística y regresión</h3>
+            <p>
+              Medidas descriptivas, correlación de Pearson, regresión
+              logarítmica y residuos.
+            </p>
+          </article>
+        </div>
+
+        <p class="methodology-note">
+          El PIB per cápita está expresado en dólares internacionales constantes
+          de 2021, ajustados por paridad de poder adquisitivo (PPA). Los
+          promedios se calculan sin ponderar por población. Los resultados
+          muestran asociaciones estadísticas, no relaciones causales.
+        </p>
+
+        <a
+          class="source-link"
+          href="https://ourworldindata.org/grapher/life-expectancy-un-vs-gdp-per-capita-wb"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Consultar la fuente original de los datos ↗
+        </a>
+      </section>
+
+      <div class="section-heading">
+        <p class="eyebrow">03 · Resultados</p>
+        <h2>¿Qué nos dicen los datos?</h2>
+        <p>
+          Exploramos primero la distribución de ambas variables, después su
+          relación estadística y finalmente su evolución durante veinte años.
+        </p>
+      </div>
+
+      <section class="analysis">
+        <p class="eyebrow">Estadística descriptiva · 2023</p>
+        <h2>¿Cómo se distribuye la esperanza de vida?</h2>
+
+        <p>
+          Agrupamos los 191 países y territorios según su esperanza de vida.
+          Cada barra representa la cantidad de entidades dentro de un intervalo
+          de diez años.
+        </p>
+
+        <div id="grafico-distribucion-vida"></div>
+
+        <div class="stat-legend">
+          <span>
+            <i class="stat-line stat-line-mean"></i>
+            Media: 73,37 años
+          </span>
+          <span>
+            <i class="stat-line stat-line-median"></i>
+            Mediana: 73,84 años
+          </span>
+        </div>
+
+        <p class="chart-insight">
+          En 2023, 88 entidades se concentraron entre los 70 y 79 años de
+          esperanza de vida. La media fue de 73,37 años y la mediana de 73,84
+          años.
+        </p>
+      </section>
+
+      <section class="analysis">
+        <p class="eyebrow">Estadística descriptiva · 2023</p>
+        <h2>¿Cómo se distribuye el PIB per cápita?</h2>
+
+        <p>
+          Utilizamos un diagrama de caja y bigotes para analizar la dispersión
+          del PIB per cápita de los 191 países y territorios, identificando
+          cuartiles y posibles valores atípicos.
+        </p>
+
+        <div id="grafico-boxplot-pib"></div>
+
+        <div class="boxplot-stats">
+          <div>
+            <span>Q1 · Primer cuartil</span>
+            <strong>6.494</strong>
+          </div>
+          <div>
+            <span>Q2 · Mediana</span>
+            <strong>17.093</strong>
+          </div>
+          <div>
+            <span>Q3 · Tercer cuartil</span>
+            <strong>40.809</strong>
+          </div>
+        </div>
+
+        <p class="chart-insight">
+          La mediana del PIB per cápita fue de 17.093 dólares internacionales,
+          considerablemente inferior a la media de 26.954. Esta diferencia
+          refleja una distribución asimétrica, influida por valores económicos
+          muy elevados.
+        </p>
+      </section>
 
       <section class="analysis">
         <h2>Riqueza económica y esperanza de vida</h2>
@@ -40,21 +224,23 @@
       </section>
 
       <section class="analysis">
-        <p class="eyebrow">Análisis histórico · 2004–2023</p>
-        <h2>¿Cómo evolucionó la relación durante veinte años?</h2>
+        <p class="eyebrow">Modelo de regresión · 2023</p>
+        <h2>¿Qué países se alejan de lo esperado?</h2>
 
         <p>
-          La correlación entre PIB per cápita y esperanza de vida fue positiva
-          durante todo el período. Compará la evolución de la correlación
-          original y la logarítmica.
+          Comparamos la esperanza de vida observada con la estimada por nuestro
+          modelo logarítmico. Mostramos los cinco residuos positivos y los cinco
+          negativos de mayor magnitud.
         </p>
 
-        <div id="grafico-correlaciones"></div>
+        <div id="grafico-residuos"></div>
 
         <p class="chart-insight">
-          En 2004, la correlación logarítmica era de 0,8114. En 2023 alcanzó
-          0,8593. La asociación se fortaleció entre ambos extremos, aunque
-          presentó fluctuaciones.
+          Nigeria presenta una esperanza de vida aproximadamente 15,33 años
+          inferior a la estimada por el modelo. En cambio, Islas Salomón supera
+          su estimación en aproximadamente 7,12 años. Estas diferencias muestran
+          que el PIB per cápita no explica por sí solo todos los resultados
+          observados.
         </p>
       </section>
 
@@ -97,89 +283,106 @@
       </section>
 
       <section class="analysis">
-        <p class="eyebrow">Estadística descriptiva · 2023</p>
-        <h2>¿Cómo se distribuye la esperanza de vida?</h2>
+        <p class="eyebrow">Análisis histórico · 2004–2023</p>
+        <h2>¿Cómo evolucionó la relación durante veinte años?</h2>
 
         <p>
-          Agrupamos los 191 países y territorios según su esperanza de vida.
-          Cada barra representa la cantidad de entidades dentro de un intervalo
-          de diez años.
+          La correlación entre PIB per cápita y esperanza de vida fue positiva
+          durante todo el período. Compará la evolución de la correlación
+          original y la logarítmica.
         </p>
 
-        <div id="grafico-distribucion-vida"></div>
-
-        <div class="stat-legend">
-          <span>
-            <i class="stat-line stat-line-mean"></i>
-            Media: 73,37 años
-          </span>
-          <span>
-            <i class="stat-line stat-line-median"></i>
-            Mediana: 73,84 años
-          </span>
-        </div>
+        <div id="grafico-correlaciones"></div>
 
         <p class="chart-insight">
-          En 2023, 88 entidades se concentraron entre los 70 y 79 años de
-          esperanza de vida. La media fue de 73,37 años y la mediana de 73,84
-          años.
+          En 2004, la correlación logarítmica era de 0,8114. En 2023 alcanzó
+          0,8593. La asociación se fortaleció entre ambos extremos, aunque
+          presentó fluctuaciones.
         </p>
       </section>
 
-      <section class="analysis">
-        <p class="eyebrow">Estadística descriptiva · 2023</p>
-        <h2>¿Qué tan desigual es la distribución del PIB?</h2>
+      <section class="conclusions-section">
+        <p class="eyebrow">04 · Conclusiones y discusión</p>
 
-        <p>
-          Utilizamos un diagrama de caja y bigotes para analizar la dispersión
-          del PIB per cápita de los 191 países y territorios, identificando
-          cuartiles y posibles valores atípicos.
+        <h2>Entonces... ¿el dinero compra años de vida?</h2>
+
+        <p class="conclusions-intro">
+          Los resultados muestran una asociación positiva importante entre el
+          PIB per cápita y la esperanza de vida. Sin embargo, la relación no es
+          perfecta y no permite establecer causalidad.
         </p>
 
-        <div id="grafico-boxplot-pib"></div>
+        <div class="conclusions-grid">
+          <article class="conclusion-card">
+            <span>01 · Asociación</span>
+            <strong>r = 0,8593</strong>
+            <p>
+              En 2023 encontramos una correlación positiva fuerte entre el
+              logaritmo del PIB per cápita y la esperanza de vida.
+            </p>
+          </article>
 
-        <div class="boxplot-stats">
-          <div>
-            <span>Q1 · Primer cuartil</span>
-            <strong>6.494</strong>
-          </div>
-          <div>
-            <span>Q2 · Mediana</span>
-            <strong>17.093</strong>
-          </div>
-          <div>
-            <span>Q3 · Tercer cuartil</span>
-            <strong>40.809</strong>
-          </div>
+          <article class="conclusion-card">
+            <span>02 · Modelo</span>
+            <strong>R² = 0,7383</strong>
+            <p>
+              La regresión logarítmica explicó estadísticamente el 73,83 % de la
+              variabilidad observada en la esperanza de vida de 2023.
+            </p>
+          </article>
+
+          <article class="conclusion-card">
+            <span>03 · Evolución</span>
+            <strong>+5,17 años</strong>
+            <p>
+              Entre 2004 y 2023 aumentó la esperanza de vida media de las 191
+              entidades analizadas, aunque hubo retrocesos temporales.
+            </p>
+          </article>
+
+          <article class="conclusion-card">
+            <span>04 · Diferencias</span>
+            <strong>−15,33 años</strong>
+            <p>
+              Nigeria presentó la mayor diferencia negativa respecto de la
+              esperanza de vida estimada por el modelo en 2023.
+            </p>
+          </article>
         </div>
 
-        <p class="chart-insight">
-          La mediana del PIB per cápita fue de 17.093 dólares internacionales,
-          considerablemente inferior a la media de 26.954. Esta diferencia
-          refleja una distribución asimétrica, influida por valores económicos
-          muy elevados.
-        </p>
-      </section>
+        <div class="final-answer">
+          <span>Nuestra respuesta</span>
 
-      <section class="analysis">
-        <p class="eyebrow">Modelo de regresión · 2023</p>
-        <h2>¿Qué países se alejan de lo esperado?</h2>
+          <h3>El dinero importa, pero no lo explica todo.</h3>
 
-        <p>
-          Comparamos la esperanza de vida observada con la estimada por nuestro
-          modelo logarítmico. Mostramos los cinco residuos positivos y los cinco
-          negativos de mayor magnitud.
-        </p>
+          <p>
+            Los países con mayor PIB per cápita tienden a presentar una
+            esperanza de vida más elevada. No obstante, los resultados muestran
+            diferencias importantes entre entidades con niveles económicos
+            comparables. Por lo tanto, el PIB per cápita es una variable
+            asociada con la longevidad, pero no permite determinar por sí sola
+            cuánto vive una población.
+          </p>
+        </div>
 
-        <div id="grafico-residuos"></div>
+        <div class="limitations">
+          <h3>Limitaciones y futuras investigaciones</h3>
 
-        <p class="chart-insight">
-          Nigeria presenta una esperanza de vida aproximadamente 15,33 años
-          inferior a la estimada por el modelo. En cambio, Islas Salomón supera
-          su estimación en aproximadamente 7,12 años. Estas diferencias muestran
-          que el PIB per cápita no explica por sí solo todos los resultados
-          observados.
-        </p>
+          <p>
+            Este estudio analiza asociaciones estadísticas y no permite
+            establecer relaciones de causa y efecto. Los promedios se calcularon
+            sin ponderar por población y el conjunto incluye únicamente
+            entidades con información completa durante los veinte años.
+          </p>
+
+          <p>
+            Además, algunos valores históricos extremos requieren una
+            interpretación cuidadosa debido a los métodos de estimación de
+            mortalidad. Una investigación futura podría incorporar variables
+            como el acceso a la salud, la educación o las condiciones sanitarias
+            para analizar mejor las diferencias entre países.
+          </p>
+        </div>
       </section>
     </main>
   </body>
