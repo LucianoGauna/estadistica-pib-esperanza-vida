@@ -103,6 +103,8 @@ async function iniciar() {
     }
 
     mostrarGrafico();
+    mostrarDistribucionVida(paises);
+    mostrarBoxplotPib(paises);
 
     selectorEscala.addEventListener("change", mostrarGrafico);
   } catch (error) {
@@ -321,3 +323,213 @@ function mostrarEvolucionPib(historico) {
     displaylogo: false,
   });
 }
+
+function mostrarDistribucionVida(paises) {
+  // Esperanza de vida de cada entidad en 2023
+  const valores = paises.map((pais) => pais["Life expectancy"]);
+
+  const datos = [
+    {
+      x: valores,
+      type: "histogram",
+      name: "Países y territorios",
+      xbins: {
+        start: 50,
+        end: 90,
+        size: 10,
+      },
+      marker: {
+        color: "#6dd3c7",
+        line: {
+          color: "#121b2e",
+          width: 2,
+        },
+      },
+      opacity: 0.85,
+      hovertemplate: "Cantidad de entidades: %{y}<extra></extra>",
+    },
+  ];
+
+  const layout = {
+    paper_bgcolor: "#121b2e",
+    plot_bgcolor: "#121b2e",
+    font: { color: "#e8edf5" },
+    margin: { t: 45, r: 25, b: 75, l: 75 },
+    bargap: 0.06,
+    showlegend: false,
+    xaxis: {
+      title: { text: "Esperanza de vida (años)" },
+      range: [50, 90],
+      tickvals: [50, 60, 70, 80, 90],
+      gridcolor: "#263247",
+      zeroline: false,
+    },
+    yaxis: {
+      title: { text: "Cantidad de países y territorios" },
+      rangemode: "tozero",
+      gridcolor: "#263247",
+      zeroline: false,
+    },
+    shapes: [
+      {
+        type: "line",
+        x0: 73.37,
+        x1: 73.37,
+        y0: 0,
+        y1: 1,
+        yref: "paper",
+        line: {
+          color: "#f0b86e",
+          width: 3,
+          dash: "dash",
+        },
+      },
+      {
+        type: "line",
+        x0: 73.84,
+        x1: 73.84,
+        y0: 0,
+        y1: 1,
+        yref: "paper",
+        line: {
+          color: "#e8edf5",
+          width: 2,
+          dash: "dot",
+        },
+      },
+    ],
+  };
+
+  Plotly.newPlot("grafico-distribucion-vida", datos, layout, {
+    responsive: true,
+    displaylogo: false,
+  });
+}
+
+function mostrarBoxplotPib(paises) {
+  const valoresPib = paises.map((pais) => pais["GDP per capita"]);
+
+  const nombres = paises.map((pais) => pais.Entity);
+
+  const datos = [
+    {
+      x: valoresPib,
+      text: nombres,
+      hoveron: "points",
+      hovertemplate:
+        "<b>%{text}</b>" + "<br>PIB per cápita: %{x:,.0f}" + "<extra></extra>",
+      type: "box",
+      orientation: "h",
+      name: "PIB per cápita",
+      boxpoints: "outliers",
+      fillcolor: "rgba(109, 211, 199, 0.35)",
+      line: {
+        color: "#6dd3c7",
+        width: 2,
+      },
+      marker: {
+        color: "#f0b86e",
+        size: 8,
+        opacity: 0.85,
+      },
+    },
+  ];
+
+  const layout = {
+    paper_bgcolor: "#121b2e",
+    plot_bgcolor: "#121b2e",
+    font: { color: "#e8edf5" },
+    margin: { t: 40, r: 30, b: 85, l: 60 },
+    showlegend: false,
+    xaxis: {
+      title: {
+        text: "PIB per cápita (PPA, dólares internacionales de 2021)",
+      },
+      range: [0, 140000],
+      tickformat: ",.0f",
+      gridcolor: "#263247",
+      zeroline: false,
+    },
+    yaxis: {
+      showticklabels: false,
+      showgrid: false,
+      zeroline: false,
+    },
+  };
+
+  Plotly.newPlot("grafico-boxplot-pib", datos, layout, {
+    responsive: true,
+    displaylogo: false,
+  });
+}
+
+async function mostrarResiduos() {
+  try {
+    const respuesta = await fetch("datos/residuos_2023.json");
+
+    if (!respuesta.ok) {
+      throw new Error("No se pudieron cargar los residuos");
+    }
+
+    const residuos = await respuesta.json();
+
+    const datos = [
+      {
+        x: residuos.map((pais) => pais.Residuo),
+        y: residuos.map((pais) => pais.Entity),
+        customdata: residuos.map((pais) => [
+          pais["Life expectancy"],
+          pais["Esperanza estimada"],
+        ]),
+        type: "bar",
+        orientation: "h",
+        marker: {
+          color: residuos.map((pais) =>
+            pais.Residuo >= 0 ? "#6dd3c7" : "#f0b86e",
+          ),
+        },
+        hovertemplate:
+          "<b>%{y}</b>" +
+          "<br>Vida observada: %{customdata[0]:.2f} años" +
+          "<br>Vida estimada: %{customdata[1]:.2f} años" +
+          "<br>Residuo: %{x:+.2f} años" +
+          "<extra></extra>",
+      },
+    ];
+
+    const layout = {
+      paper_bgcolor: "#121b2e",
+      plot_bgcolor: "#121b2e",
+      font: { color: "#e8edf5" },
+      margin: { t: 35, r: 35, b: 75, l: 170 },
+      showlegend: false,
+      bargap: 0.25,
+
+      xaxis: {
+        title: { text: "Residuo (años)" },
+        range: [-17, 9],
+        gridcolor: "#263247",
+        zeroline: true,
+        zerolinecolor: "#e8edf5",
+        zerolinewidth: 2,
+      },
+
+      yaxis: {
+        automargin: true,
+        autorange: "reversed",
+      },
+    };
+
+    Plotly.newPlot("grafico-residuos", datos, layout, {
+      responsive: true,
+      displaylogo: false,
+    });
+  } catch (error) {
+    console.error(error);
+
+    document.getElementById("grafico-residuos").textContent =
+      "No se pudieron cargar los residuos.";
+  }
+}
+
+mostrarResiduos();

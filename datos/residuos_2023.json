@@ -1,0 +1,62 @@
+[
+  {
+    "Entity":"Nigeria",
+    "Life expectancy":54.462,
+    "Esperanza estimada":69.7924346412,
+    "Residuo":-15.3304346412
+  },
+  {
+    "Entity":"Greenland",
+    "Life expectancy":70.055,
+    "Esperanza estimada":81.425429108,
+    "Residuo":-11.370429108
+  },
+  {
+    "Entity":"Nauru",
+    "Life expectancy":62.109,
+    "Esperanza estimada":71.9749520262,
+    "Residuo":-9.8659520262
+  },
+  {
+    "Entity":"Equatorial Guinea",
+    "Life expectancy":63.707,
+    "Esperanza estimada":73.3208468898,
+    "Residuo":-9.6138468898
+  },
+  {
+    "Entity":"Guyana",
+    "Life expectancy":70.18,
+    "Esperanza estimada":79.4983729009,
+    "Residuo":-9.3183729009
+  },
+  {
+    "Entity":"Maldives",
+    "Life expectancy":81.041,
+    "Esperanza estimada":75.3167448758,
+    "Residuo":5.7242551242
+  },
+  {
+    "Entity":"Malawi",
+    "Life expectancy":67.353,
+    "Esperanza estimada":61.5608542848,
+    "Residuo":5.7921457152
+  },
+  {
+    "Entity":"Lebanon",
+    "Life expectancy":77.817,
+    "Esperanza estimada":71.7343894849,
+    "Residuo":6.0826105151
+  },
+  {
+    "Entity":"Jordan",
+    "Life expectancy":77.814,
+    "Esperanza estimada":71.2356095874,
+    "Residuo":6.5783904126
+  },
+  {
+    "Entity":"Solomon Islands",
+    "Life expectancy":70.528,
+    "Esperanza estimada":63.4072114914,
+    "Residuo":7.1207885086
+  }
+]

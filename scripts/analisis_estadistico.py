@@ -206,6 +206,40 @@ print(f"Porcentaje de variabilidad explicada: {r_cuadrado * 100:.2f}%")
 
 
 # ========================================
+# EXPORTACIÓN DE RESIDUOS - 2023
+# ========================================
+
+# Seleccionar los cinco residuos más negativos
+residuos_negativos = df_2023.nsmallest(5, "Residuo")
+
+# Seleccionar los cinco residuos más positivos
+residuos_positivos = df_2023.nlargest(5, "Residuo")
+
+# Unir ambos grupos y ordenar por residuo
+residuos_destacados = pd.concat([
+    residuos_negativos,
+    residuos_positivos
+]).sort_values("Residuo")
+
+# Exportar solamente las columnas necesarias
+columnas_residuos = [
+    "Entity",
+    "Life expectancy",
+    "Esperanza estimada",
+    "Residuo"
+]
+
+residuos_destacados[columnas_residuos].to_json(
+    RUTA_PROYECTO / "datos" / "residuos_2023.json",
+    orient="records",
+    indent=2
+)
+
+print("\nArchivo generado: residuos_2023.json")
+
+
+
+# ========================================
 # ANÁLISIS HISTÓRICO: 2004-2023
 # ========================================
 
