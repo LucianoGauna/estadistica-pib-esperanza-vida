@@ -122,6 +122,8 @@ async function mostrarCorrelacionesHistoricas() {
     }
 
     const historico = await respuesta.json();
+    mostrarEvolucionVida(historico);
+    mostrarEvolucionPib(historico);
 
     const anios = historico.map((dato) => dato.Year);
 
@@ -191,3 +193,131 @@ async function mostrarCorrelacionesHistoricas() {
 }
 
 mostrarCorrelacionesHistoricas();
+
+function mostrarEvolucionVida(historico) {
+  const anios = historico.map((dato) => dato.Year);
+
+  const datos = [
+    {
+      x: anios,
+      y: historico.map((dato) => dato.Media_vida),
+      type: "scatter",
+      mode: "lines+markers",
+      name: "Media",
+      line: {
+        color: "#6dd3c7",
+        width: 3,
+      },
+      hovertemplate: "Año: %{x}<br>Media: %{y:.2f} años<extra></extra>",
+    },
+    {
+      x: anios,
+      y: historico.map((dato) => dato.Mediana_vida),
+      type: "scatter",
+      mode: "lines+markers",
+      name: "Mediana",
+      line: {
+        color: "#f0b86e",
+        width: 3,
+      },
+      hovertemplate: "Año: %{x}<br>Mediana: %{y:.2f} años<extra></extra>",
+    },
+  ];
+
+  const layout = {
+    paper_bgcolor: "#121b2e",
+    plot_bgcolor: "#121b2e",
+    font: { color: "#e8edf5" },
+    margin: { t: 35, r: 25, b: 70, l: 65 },
+    xaxis: {
+      title: { text: "Año" },
+      tickmode: "array",
+      tickvals: [
+        2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2023,
+      ],
+      range: [2003.5, 2023.5],
+      gridcolor: "#263247",
+    },
+    yaxis: {
+      title: { text: "Esperanza de vida (años)" },
+      range: [65, 76],
+      gridcolor: "#263247",
+      zeroline: false,
+    },
+    legend: {
+      orientation: "h",
+      y: -0.25,
+    },
+    hovermode: "x unified",
+  };
+
+  Plotly.newPlot("grafico-vida", datos, layout, {
+    responsive: true,
+    displaylogo: false,
+  });
+}
+
+function mostrarEvolucionPib(historico) {
+  const anios = historico.map((dato) => dato.Year);
+
+  const datos = [
+    {
+      x: anios,
+      y: historico.map((dato) => dato.Media_pib),
+      type: "scatter",
+      mode: "lines+markers",
+      name: "Media",
+      line: {
+        color: "#6dd3c7",
+        width: 3,
+      },
+      hovertemplate: "Año: %{x}<br>Media: %{y:,.0f}<extra></extra>",
+    },
+    {
+      x: anios,
+      y: historico.map((dato) => dato.Mediana_pib),
+      type: "scatter",
+      mode: "lines+markers",
+      name: "Mediana",
+      line: {
+        color: "#f0b86e",
+        width: 3,
+      },
+      hovertemplate: "Año: %{x}<br>Mediana: %{y:,.0f}<extra></extra>",
+    },
+  ];
+
+  const layout = {
+    paper_bgcolor: "#121b2e",
+    plot_bgcolor: "#121b2e",
+    font: { color: "#e8edf5" },
+    margin: { t: 35, r: 25, b: 70, l: 80 },
+    xaxis: {
+      title: { text: "Año" },
+      tickmode: "array",
+      tickvals: [
+        2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2023,
+      ],
+      range: [2003.5, 2023.5],
+      gridcolor: "#263247",
+    },
+    yaxis: {
+      title: {
+        text: "PIB per cápita (PPA, dólares internacionales de 2021)",
+      },
+      tickformat: ",.0f",
+      gridcolor: "#263247",
+      zeroline: false,
+    },
+    legend: {
+      orientation: "h",
+      y: -0.25,
+    },
+    hovermode: "x unified",
+  };
+
+  Plotly.newPlot("grafico-pib", datos, layout, {
+    responsive: true,
+    displaylogo: false,
+  });
+}

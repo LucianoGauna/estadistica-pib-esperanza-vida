@@ -98,3 +98,8 @@ select {
   margin-top: 24px;
   color: #d4e3eb;
 }
+
+#grafico-vida {
+  width: 100%;
+  min-height: 450px;
+}
